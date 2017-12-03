@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Scope;
 public class Config {
 
   @Bean
-  @Scope("prototype")
+  @Scope("periodical")
   public Color color() {
     Random random = new Random();
     return new Color(random.nextInt(255), random.nextInt(255), random.nextInt(255));
