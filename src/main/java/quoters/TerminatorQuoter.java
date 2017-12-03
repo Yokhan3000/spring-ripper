@@ -24,6 +24,10 @@ public class TerminatorQuoter implements Quoter {
     System.out.println(repeat);
   }
 
+  public void setRepeat(int repeat) {
+    this.repeat = repeat;
+  }
+
   @PostProxy
   public void sayQuote() {
     System.out.println("Phase 3");
