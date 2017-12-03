@@ -8,7 +8,6 @@ public class Main {
   public static void main(String[] args) {
     ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
         "spring-config.xml");
-    context.getBean(TerminatorQuoter.class).sayQuote();
+    context.getBean(Quoter.class).sayQuote();
   }
-
 }
